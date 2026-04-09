@@ -1,245 +1,309 @@
-# 🚀 Streak Tracker: Ultimate Productivity Companion
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=250&section=header&text=STREAK%20TRACKER&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=40"/>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
-[![React Version](https://img.shields.io/badge/react-19.2.0-blue)](https://reactjs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-7.0.0-green)](https://www.mongodb.com/)
-[![Vite](https://img.shields.io/badge/Vite-7.2.4-purple)](https://vitejs.dev/)
+<h1 align="center">🚀 Ultimate Productivity Companion</h1>
 
-> Transform your daily habits into unbreakable streaks with this cutting-edge productivity application. Built with modern web technologies, featuring real-time analytics, gamified tracking, and an intuitive user experience that keeps you motivated and on track.
+<p align="center">
 
-## 🌟 Features
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&duration=2500&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Track+Your+Habits;Build+Unbreakable+Streaks;Focus+Better+Everyday;Consistency+Creates+Success" />
 
-### 🔥 Core Functionality
-- **🔐 Secure Authentication**: JWT-based user authentication with bcrypt password hashing
-- **⏱️ Focus Timer**: Pomodoro-style focus sessions with customizable durations and break intervals
-- **📊 Habit Tracking**: Create, monitor, and maintain streaks for daily/weekly habits
-- **📝 Digital Journal**: Record thoughts, reflections, and insights with rich text support
-- **✅ Task Management**: Organize tasks with priorities, deadlines, and progress tracking
-- **📈 Live Metrics Dashboard**: Real-time analytics with interactive charts and heatmaps
-- **🎵 Audio Integration**: Custom sound notifications and ambient audio for focus sessions
+</p>
 
-### 🎨 User Experience
-- **🌙 Dark/Light Theme**: Seamless theme switching with persistent preferences
-- **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **⚡ Real-time Updates**: Live synchronization across all devices
-- **🎯 Gamification**: Achievement badges, streak milestones, and motivational notifications
-- **📊 Data Visualization**: Beautiful charts powered by Recharts library
-- **🔍 Advanced Filtering**: Sort, filter, and search through your data effortlessly
+---
 
-### 🛠️ Technical Excellence
-- **⚡ High Performance**: Built with Vite for lightning-fast development and builds
-- **🔧 Modern Stack**: React 19, Node.js, Express 5, MongoDB with Mongoose
-- **🎨 Styled with Tailwind**: Utility-first CSS framework for consistent design
-- **📦 Modular Architecture**: Clean separation of concerns with controllers, models, and routes
-- **🧪 Type-Safe**: TypeScript support in development with ESLint for code quality
+<p align="center">
 
-## 🏗️ Architecture
+<img src="https://img.shields.io/badge/Node.js-%3E%3D18-0d1117?style=for-the-badge&logo=node.js"/>
+<img src="https://img.shields.io/badge/React-19.2.0-0d1117?style=for-the-badge&logo=react"/>
+<img src="https://img.shields.io/badge/MongoDB-7.0-0d1117?style=for-the-badge&logo=mongodb"/>
+<img src="https://img.shields.io/badge/Vite-7-0d1117?style=for-the-badge&logo=vite"/>
+<img src="https://img.shields.io/badge/License-MIT-0d1117?style=for-the-badge"/>
 
-```
-streak-tracker/
-├── 📁 server/                 # Backend API Server
-│   ├── controllers/          # Business logic handlers
-│   ├── middleware/           # Authentication & validation
-│   ├── models/              # MongoDB schemas
-│   ├── routes/              # API endpoints
-│   └── index.js             # Server entry point
+</p>
+
+<p align="center">
+A modern full-stack productivity platform designed to transform daily habits into powerful streaks.  
+Built with <b>React, Node.js, MongoDB, and Vite</b> — focused on performance, simplicity, and developer experience.
+</p>
+
+---
+
+<img src="https://user-images.githubusercontent.com/74038190/212750102-3c3d8a3c-bb0f-4c6f-a35c-88e42a86a8b2.gif" width="100%">
+
+# 🎥 Live Demo
+
+<p align="center">
+
+<img src="https://user-images.githubusercontent.com/demo/streak-demo.gif" width="900"/>
+
+</p>
+
+---
+
+# ✨ Core Features
+
+| Feature                  | Description                                    |
+| ------------------------ | ---------------------------------------------- |
+| 🔐 Secure Authentication | JWT authentication with bcrypt hashing         |
+| ⏱ Pomodoro Focus Timer   | Deep work sessions with customizable intervals |
+| 📊 Habit Tracking        | Maintain daily / weekly productivity streaks   |
+| 📝 Digital Journal       | Store reflections and insights                 |
+| ✅ Task Manager           | Manage tasks with priority & deadlines         |
+| 📈 Live Analytics        | Productivity dashboard with charts             |
+| 🎵 Ambient Focus Audio   | Background sounds for deep work                |
+
+---
+
+# 🎨 User Experience
+
+* 🌙 **Dark / Light mode**
+* 📱 **Fully responsive UI**
+* ⚡ **Real-time data updates**
+* 🎯 **Gamification system**
+* 📊 **Interactive productivity charts**
+* 🔍 **Advanced filtering**
+
+---
+
+<img src="https://user-images.githubusercontent.com/74038190/212744275-89eae0a2-fc90-4e1d-9b4a-10c53c7b7f64.gif" width="100%">
+
+# 🛠 Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,vite,js,git,github"/>
+
+</p>
+
+### Stack Overview
+
+| Layer    | Technology        |
+| -------- | ----------------- |
+| Frontend | React 19 + Vite   |
+| Backend  | Node.js + Express |
+| Database | MongoDB           |
+| Styling  | Tailwind CSS      |
+| Auth     | JWT               |
+
+---
+
+# 🧠 Architecture
+
+```id="arc1"
+streak-tracker
 │
-└── 📁 streak-tracker/        # Frontend React App
-    ├── public/              # Static assets
-    ├── src/
-    │   ├── components/      # Reusable UI components
-    │   ├── Pages/          # Route components
-    │   ├── context/        # React context providers
-    │   └── assets/         # Images and icons
-    └── vite.config.js      # Build configuration
+├── server
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   └── index.js
+│
+└── client
+    ├── components
+    ├── pages
+    ├── context
+    └── assets
 ```
 
-## 🚀 Quick Start
+---
 
-### Prerequisites
-- **Node.js** (>= 18.0.0)
-- **MongoDB** (local or cloud instance)
-- **npm** or **yarn** package manager
+<img src="https://user-images.githubusercontent.com/74038190/212743909-3c5037bd-34f6-4a6e-bc2f-ec6dfd1c72f3.gif" width="100%">
 
-### Installation
+# 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/streak-tracker.git
-   cd streak-tracker
-   ```
+## Prerequisites
 
-2. **Setup Backend**
-   ```bash
-   cd server
-   npm install
-   cp .env.example .env  # Configure your environment variables
-   npm run dev           # Start development server on port 5000
-   ```
+```id="req"
+Node.js >= 18
+MongoDB
+npm / yarn
+```
 
-3. **Setup Frontend**
-   ```bash
-   cd ../streak-tracker
-   npm install
-   npm run dev           # Start development server on port 5173
-   ```
+---
 
-4. **Access the Application**
-   - Frontend: [http://localhost:5173](http://localhost:5173)
-   - Backend API: [http://localhost:5000](http://localhost:5000)
+## Installation
 
-## ⚙️ Environment Configuration
+### Clone the Repository
 
-Create `.env` files in both `server/` and `streak-tracker/` directories:
+```bash id="clone"
+git clone https://github.com/yourusername/streak-tracker.git
+cd streak-tracker
+```
 
-### Backend (.env)
-```env
+---
+
+### Backend Setup
+
+```bash id="backend"
+cd server
+npm install
+cp .env.example .env
+npm run dev
+```
+
+Backend runs at
+
+```id="api"
+http://localhost:5000
+```
+
+---
+
+### Frontend Setup
+
+```bash id="frontend"
+cd ../streak-tracker
+npm install
+npm run dev
+```
+
+Frontend runs at
+
+```id="web"
+http://localhost:5173
+```
+
+---
+
+# ⚙ Environment Variables
+
+### Backend
+
+```env id="env1"
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/streaktracker
-JWT_SECRET=your_super_secret_jwt_key_here
+JWT_SECRET=your_secret_key
 NODE_ENV=development
 ```
 
-### Frontend (.env)
-```env
+### Frontend
+
+```env id="env2"
 VITE_API_BASE_URL=http://localhost:5000/api
 ```
 
-## 📡 API Documentation
+---
 
-### Authentication Endpoints
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `GET /api/auth/profile` - Get user profile
-- `PUT /api/auth/profile` - Update user profile
+<img src="https://user-images.githubusercontent.com/74038190/212744275-89eae0a2-fc90-4e1d-9b4a-10c53c7b7f64.gif" width="100%">
 
-### Habit Management
-- `GET /api/habits` - Get all habits
-- `POST /api/habits` - Create new habit
-- `PUT /api/habits/:id` - Update habit
-- `DELETE /api/habits/:id` - Delete habit
-- `POST /api/habits/:id/log` - Log habit completion
+# 📡 API Overview
 
-### Task Management
-- `GET /api/tasks` - Get all tasks
-- `POST /api/tasks` - Create new task
-- `PUT /api/tasks/:id` - Update task
-- `DELETE /api/tasks/:id` - Delete task
+<details>
+<summary>Authentication</summary>
 
-### Focus Sessions
-- `GET /api/focus` - Get focus logs
-- `POST /api/focus` - Log focus session
-- `GET /api/focus/stats` - Get focus statistics
-
-### Journal Entries
-- `GET /api/journal` - Get journal entries
-- `POST /api/journal` - Create journal entry
-- `PUT /api/journal/:id` - Update journal entry
-- `DELETE /api/journal/:id` - Delete journal entry
-
-## 🎯 Usage Examples
-
-### Creating a Habit
-```javascript
-const newHabit = {
-  name: "Morning Meditation",
-  description: "10 minutes of mindfulness",
-  frequency: "daily",
-  targetStreak: 30
-};
-
-fetch('/api/habits', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(newHabit)
-});
+```
+POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/profile
+PUT /api/auth/profile
 ```
 
-### Starting a Focus Session
-```javascript
-const focusSession = {
-  duration: 25, // minutes
-  type: "pomodoro",
-  task: "Complete project proposal"
-};
+</details>
 
-fetch('/api/focus', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(focusSession)
-});
+<details>
+<summary>Habits</summary>
+
+```
+GET /api/habits
+POST /api/habits
+PUT /api/habits/:id
+DELETE /api/habits/:id
+POST /api/habits/:id/log
 ```
 
-## 🧪 Testing
+</details>
 
-```bash
-# Run frontend tests
+<details>
+<summary>Focus Sessions</summary>
+
+```
+GET /api/focus
+POST /api/focus
+GET /api/focus/stats
+```
+
+</details>
+
+---
+
+# 🧪 Testing
+
+```id="test"
 cd streak-tracker
 npm run lint
 
-# Run backend tests (if implemented)
 cd ../server
 npm test
 ```
 
-## 🚢 Deployment
+---
 
-### Backend Deployment
-```bash
+# 🚢 Deployment
+
+### Backend
+
+```bash id="deploy1"
 cd server
-npm run build
 npm start
 ```
 
-### Frontend Deployment
-```bash
+### Frontend
+
+```bash id="deploy2"
 cd streak-tracker
 npm run build
-npm run preview
 ```
-
-### Docker Support (Future Enhancement)
-```dockerfile
-# Planned: Multi-stage Docker build for production
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow ESLint configuration
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-- Use conventional commits format
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Icons**: [Lucide React](https://lucide.dev/) for beautiful icons
-- **Charts**: [Recharts](https://recharts.org/) for data visualization
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS
-- **Build Tool**: [Vite](https://vitejs.dev/) for fast development
-
-## 📞 Support
-
-- 📧 Email: support@streaktracker.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/streak-tracker/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/streak-tracker/discussions)
 
 ---
 
-**Made with ❤️ by [Your Name]**
+<img src="https://user-images.githubusercontent.com/74038190/212744275-89eae0a2-fc90-4e1d-9b4a-10c53c7b7f64.gif" width="100%">
 
-*Stay consistent, build habits, achieve greatness!* 🌟
+# 📊 Repository Stats
+
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=tokyonight"/>
+
+</p>
+
+---
+
+# 📈 Contribution Activity
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=yourusername&theme=react-dark"/>
+
+</p>
+
+---
+
+# 🤝 Contributing
+
+```bash id="contrib"
+git checkout -b feature/new-feature
+git commit -m "Add new feature"
+git push origin feature/new-feature
+```
+
+Open a Pull Request 🚀
+
+---
+
+# ❤️ Author
+
+<p align="center">
+
+Made with ❤️ by **Chaitanya**
+
+⭐ Star this repository if you like the project!
+
+</p>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=120&section=footer"/>
+</p>
