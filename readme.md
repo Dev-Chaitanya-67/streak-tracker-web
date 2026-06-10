@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=250&section=header&text=STREAK%20TRACKER&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=40"/>
 </p>
 
-<h1 align="center">🚀 Ultimate Productivity Companion</h1>
+<h1 align="center">🚀 Ultimate Productivity Companion Tool</h1>
 
 <p align="center">
 
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-A modern full-stack productivity platform designed to transform daily habits into powerful streaks.  
+A modern full-stack productivity platform designed to transform daily habits into powerful streaks.
 Built with <b>React, Node.js, MongoDB, and Vite</b> — focused on performance, simplicity, and developer experience.
 </p>
 
