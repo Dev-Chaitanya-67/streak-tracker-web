@@ -4,6 +4,20 @@ import Task from '../models/Task.js';
 // @route   GET /api/tasks
 export const getTasks = async (req, res) => {
   try {
+    const today = new Date().toISOString().split('T')[0];
+    
+    // Auto-cleanup: if a task is completed, its date is in the past,
+    // and it belongs to a custom list, remove it from that custom list.
+    await Task.updateMany(
+      {
+        user: req.user.id,
+        completed: true,
+        customList: { $ne: null },
+        date: { $lt: today, $ne: 'daily' }
+      },
+      { $set: { customList: null } }
+    );
+
     const tasks = await Task.find({ user: req.user.id }).sort({ date: 1, time: 1 });
     res.status(200).json(tasks);
   } catch (error) {
